@@ -45,21 +45,140 @@
           <p class="lead">Please fill-out the form completely</p>
         </div>
 
-        <div>
-          <form>
+        <form class="row g-3">
+          <div class="col-md-4">
+            <label for="firstName" class="form-label"><b>First Name</b> <span style="color:red">*</span></label>
+            <input type="text" class="form-control" id="firstName" />
+          </div>
+          <div class="col-md-4">
+            <label for="middleName" class="form-label"><b>Middle Name</b></label>
+            <input type="text" class="form-control" id="MiddleName" />
+          </div>
+          <div class="col-md-4">
+            <label for="lastName" class="form-label"><b>Last Name </b><span style="color:red">*</span></label>
+            <input type="text" class="form-control" id="lastName" />
+          </div>
+          <div class="col-12">
+            <label for="inputAddress" class="form-label"><b>Address</b><span style="color:red">*</span></label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputAddress"
+              placeholder="Unit No., House No., Street Name, Subdivision, City, Country, Zip Code"
+            />
+          </div>
 
-          <h1>Form In Progress...</h1>
+          <div class="col-md-4">
+            <label for="birthDate" class="form-label"><b>Birthdate </b><span style="color:red">*</span></label>
+            <input type="date" class="form-control" id="birthDate" />
+          </div>
+          <div class="col-md-4">
+            <label for="contactNumber" class="form-label"><b>Contact Number </b><span style="color:red">*</span></label>
+            <input
+              type="tel"
+              class="form-control"
+              id="contactNumber"
+              value="+63"crea
+            />
+          </div>
+          <div class="col-md-4">
+            <label for="gender" class="form-label"><b>Gender: </b><span style="color:red">*</span></label><br>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault1"/>
+              <label class="form-check-label" for="flexRadioDefault1">
+                Male
+              </label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault1"/>
+              <label class="form-check-label" for="flexRadioDefault2">Female</label>
+            </div>
+          </div>
 
+          <div class="col-12">
+            <label for="medicalHistory" class="form-label"><b>Medical History: </b><span style="color:red">*</span></label><br>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">Asthma</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">Cancer</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">Cardiac Disease</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">Diabetes</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">Hypertension</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">Psychiatric Disorder</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">Epilepsy</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">Others</label>
+            </div>
+          </div>
+          
+              <div class="col-md-3">
+                <label for="form-select" class="form-label text-start"  multiple><b>Current Sysmptoms: </b><span style="color:red">*</span></label>
+              </div>
+              <div class="col-md-3">
+                <select name="currentSyptoms" id="currentSyptoms" style="width: auto" multiple>
+                  <option value="Hematological">Hematological</option>
+                  <option value="Neurological">Neurological</option>
+                  <option value="Psychiatric">Psychiatric</option>
+                  <option value="Gastrointestinal">Gastrointestinal</option>
+                  <option value="Weight Loss">Weight Loss</option>
+                </select>
+              </div>
+          
 
+          <div class="col-md-6">
+            <label for="form-select" class="form-label"  multiple><b>Are you currently taking medication: </b><span style="color:red">*</span></label>
+            <div class="form-check "> 
+              <!-- form-check-inline -->
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"/>
+              <label class="form-check-label" for="flexRadioDefault1">
+                Yes
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"/>
+              <label class="form-check-label" for="flexRadioDefault2">No</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="text" name="flexRadioDefault" style="height:30px; width:250px" id="flexRadioDefault2"/>
+              <label class="form-check-label" for="flexRadioDefault2"></label>
+            </div>
 
-          </form>
-        </div>
+          </div>
 
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <div>
 
+            </div>
+          </div>
+        </form>
       </main>
 
       <footer class="my-5 pt-5 text-muted text-center text-small">
-        <p class="mb-1">&copy; 2017–2021 Company Name</p>
+        <p class="mb-1">
+          a KodeGo Exercise | &copy; 2021 | Webdev: Rodrigo I. Aguirre Jr.
+        </p>
         <ul class="list-inline">
           <li class="list-inline-item"><a href="#">Privacy</a></li>
           <li class="list-inline-item"><a href="#">Terms</a></li>
@@ -71,5 +190,8 @@
     <script src="bootstrap.bundle.min.js"></script>
 
     <script src="form-validation.js"></script>
+    
+    
+
   </body>
 </html>
